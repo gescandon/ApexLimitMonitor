@@ -1,3 +1,9 @@
+// 
+// (c) 2012 Appirio, Inc.
+//
+// Apex Limit Monitor utility
+//
+//
 public with sharing class ApexLimitMonitor {
 
 	private Limit_Detail__c initLimitDetail; // initialized limit details
