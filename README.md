@@ -8,18 +8,18 @@ In both static and instance use cases, you will pass in a process name (String) 
 
 ###Static Limits Snapshot
 
-    
+````
 ApexLimitMonitor.recordLimits('DocParent__c trigger static');
-    
+````
 
 
 
 ###Instance Limits Capture
 
-    
+````
 ApexLimitMonitor monitor = ApexLimitMonitor.initialize();
 
 ... all kinds of apex ...
 
 monitor.recordLimitsInstance('DocParent__c trigger instance');
-    
+````
