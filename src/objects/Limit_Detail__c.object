@@ -138,17 +138,6 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Count_Queuable_Jobs__c</fullName>
-        <defaultValue>0</defaultValue>
-        <externalId>false</externalId>
-        <label>Count Queuable Jobs</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>Count_Queueable_Jobs__c</fullName>
         <defaultValue>0</defaultValue>
         <externalId>false</externalId>
@@ -263,17 +252,6 @@
         <defaultValue>0</defaultValue>
         <externalId>false</externalId>
         <label>Limit Query Rows</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Limit_Queuable_Jobs__c</fullName>
-        <defaultValue>0</defaultValue>
-        <externalId>false</externalId>
-        <label>Limit Queuable Jobs</label>
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
