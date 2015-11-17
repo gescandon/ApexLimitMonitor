@@ -8,6 +8,7 @@
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>enabled</label>
+        <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
     <label>Apex Limit Detail Config</label>
