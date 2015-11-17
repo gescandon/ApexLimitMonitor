@@ -39,6 +39,9 @@ public with sharing class ApexLimitMonitor {
 		limitDetail.Count_Callouts__c = Limits.getCallouts() - initLimitDetail.Count_Callouts__c;
 		limitDetail.Limit_Callouts__c = initLimitDetail.Limit_Callouts__c;
 		
+		limitDetail.Count_CpuTime__c = Limits.getCpuTime() - initLimitDetail.Count_CpuTime__c;
+		limitDetail.Limit_CpuTime__c = initLimitDetail.Limit_CpuTime__c;
+		
 		limitDetail.Count_DML_Rows__c = Limits.getDMLRows() - initLimitDetail.Count_DML_Rows__c;
 		limitDetail.Limit_DML_Rows__c = initLimitDetail.Limit_DML_Rows__c;
 		
@@ -54,8 +57,15 @@ public with sharing class ApexLimitMonitor {
 		limitDetail.Count_Heap_Size__c = Limits.getHeapSize() - initLimitDetail.Count_Heap_Size__c;
 		limitDetail.Limit_Heap_Size__c = initLimitDetail.Limit_Heap_Size__c;
 		
+		limitDetail.Count_Mobile_Push_Apex_Calls__c = Limits.getMobilePushApexCalls() - initLimitDetail.Count_Mobile_Push_Apex_Calls__c;
+		limitDetail.Limit_Mobile_Push_Apex_Calls__c = initLimitDetail.Limit_Mobile_Push_Apex_Calls__c;
+
 		limitDetail.Count_Queries__c = Limits.getQueries() - initLimitDetail.Count_Queries__c;
 		limitDetail.Limit_Queries__c = initLimitDetail.Limit_Queries__c;
+
+		limitDetail.Count_Query_Locator_Rows__c = Limits.getQueryLocatorRows() - initLimitDetail.Count_Query_Locator_Rows__c;
+		limitDetail.Limit_Query_Locator_Rows__c = initLimitDetail.Limit_Query_Locator_Rows__c;
+
 		limitDetail.Count_Query_Rows__c = Limits.getQueryRows() - initLimitDetail.Count_Query_Rows__c;
 		limitDetail.Limit_Query_Rows__c = initLimitDetail.Limit_Query_Rows__c;
 		
@@ -100,6 +110,9 @@ public with sharing class ApexLimitMonitor {
 		limitDetail.Count_Callouts__c = Limits.getCallouts();
 		limitDetail.Limit_Callouts__c = Limits.getLimitCallouts();
 		
+		limitDetail.Count_CpuTime__c = Limits.getCpuTime();
+		limitDetail.Limit_CpuTime__c = Limits.getLimitCpuTime();
+		
 		limitDetail.Count_DML_Rows__c = Limits.getDMLRows();
 		limitDetail.Limit_DML_Rows__c = Limits.getLimitDMLRows();
 		
@@ -115,8 +128,15 @@ public with sharing class ApexLimitMonitor {
 		limitDetail.Count_Heap_Size__c = Limits.getHeapSize();
 		limitDetail.Limit_Heap_Size__c = Limits.getLimitHeapSize();
 		
+		limitDetail.Count_Mobile_Push_Apex_Calls__c = Limits.getMobilePushApexCalls();
+		limitDetail.Limit_Mobile_Push_Apex_Calls__c = Limits.getLimitMobilePushApexCalls();
+		
 		limitDetail.Count_Queries__c = Limits.getQueries();
 		limitDetail.Limit_Queries__c = Limits.getLimitQueries();
+
+		limitDetail.Count_Query_Locator_Rows__c = Limits.getQueryLocatorRows();
+		limitDetail.Limit_Query_Locator_Rows__c = Limits.getLimitQueryLocatorRows();
+
 		limitDetail.Count_Query_Rows__c = Limits.getQueryRows();
 		limitDetail.Limit_Query_Rows__c = Limits.getLimitQueryRows();
 		
